@@ -17,7 +17,7 @@ Deploy a single-node Wazuh SIEM environment using Docker Compose and integrate o
 - Default credentials: `admin` / `SecretPassword`
 - Successful startup and communication between Wazuh manager, indexer, and dashboard.
 
-![Wazuh Dashboard](dashboard.png)
+![Wazuh Dashboard] (<img width="1907" height="908" alt="image" src="https://github.com/user-attachments/assets/253135c9-275c-483b-9b6d-f944fe3ad77f" />)
 *Figure 1: Wazuh SIEM stack running in Docker.*
 
 ## Lessons Learned
