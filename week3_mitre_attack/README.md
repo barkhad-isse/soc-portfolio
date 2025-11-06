@@ -2,8 +2,7 @@
 
 ## Objective
 
-The goal for week 3 was to simulate adversary behavior and analyze the detections in **Wazuh SIEM** using the MITRE ATT&CK framework.  
-This exercise focused on network scanning, audit logging, and agent-based event collection between the **Kali (attacker)** and **Ubuntu (Wazuh server)** machines.
+In this week, the focus was on simulating suspicious activity (e.g., network scans) on the Kali Linux VM and verifying that the Wazuh SIEM, running on the Ubuntu VM, can detect and log these events correctly. The goal was to understand how endpoint activities generate alerts and are forwarded to the SIEM.
 
 ## Steps Performed
 
@@ -11,24 +10,6 @@ This exercise focused on network scanning, audit logging, and agent-based event 
 2. Opened the MITRE ATT&CK dashboard in Wazuh and refreshed to view recent activity.
 3. Reviewed the top tactics and techniques triggered by our actions.
 
-For the full list of commands used during this exercise, see **week3_mitre_attack/command-history.md**.
 
-## Findings
 
-The MITRE ATT&CK dashboard showed activity for several tactics:
 
-- **Defense Evasion**
-- **Privilege Escalation**
-- **Initial Access**
-- **Persistence**
-
-These findings demonstrate that Wazuh can map host-based activity to multiple MITRE ATT&CK tactics out-of-the-box and provide insight into which behaviors generate detections.
-
-## Evidence
-
-A screenshot of the MITRE ATT&CK dashboard illustrating these detections can be found in **week3_mitre_attack/screenshots.md**.
-
-## Lessons Learned
-
-- Wazuh can map host-based activity to multiple MITRE ATT&CK tactics out-of-the-box.
-- Additional configuration (e.g., extra audit rules or network IDS alerts) might be required to map additional tactics not covered by default.
