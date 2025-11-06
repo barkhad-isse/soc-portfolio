@@ -1,0 +1,16 @@
+<group name="local,kali,linux">
+
+  <rule id="300101" level="7">
+    <if_group>sudo</if_group>
+    <description>Command executed with sudo on Kali agent</description>
+    <mitre><id>T1078.003</id></mitre>
+  </rule>
+
+  <rule id="300102" level="9">
+    <if_group>auditd</if_group>
+    <field name="audit.comm">(?i)^nmap$</field>
+    <description>Network scan detected (nmap) via auditd</description>
+    <mitre><id>T1046</id></mitre>
+  </rule>
+
+</group>
