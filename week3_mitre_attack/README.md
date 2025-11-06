@@ -1,4 +1,4 @@
-# Week 3 – MITRE ATT&CK Analysis
+# Week 3: MITRE ATT&CK Analysis
 
 ## Objective
 
