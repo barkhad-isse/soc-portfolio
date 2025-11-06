@@ -15,7 +15,7 @@ Install and configure a Wazuh agent on a Kali Linux VM to collect host-based tel
 ## Results
 - The Kali agent successfully registered with the manager and transmitted logs.
 - Auditd events, privileged command use, and network scanning activity were captured and triggered alerts based on custom rules.
-- Screenshots showing the active agent, auditd status, and threat hunting alerts are stored in the `screenshots` folder.
+- Screenshots showing the active agent, auditd status, and threat hunting alerts are stored in the `screenshots` file.
 
 ## Lessons Learned
 - Kali may require importing the Kali archive signing key and updating the apt sources to install auditd.
