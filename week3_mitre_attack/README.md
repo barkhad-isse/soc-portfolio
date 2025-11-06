@@ -2,7 +2,8 @@
 
 ## Objective
 
-Explore the MITRE ATT&CK dashboard within Wazuh to understand how detected events are mapped to tactics such as Defense Evasion, Privilege Escalation, Initial Access, and Persistence.
+The goal for week 3 was to simulate adversary behavior and analyze the detections in **Wazuh SIEM** using the MITRE ATT&CK framework.  
+This exercise focused on network scanning, audit logging, and agent-based event collection between the **Kali (attacker)** and **Ubuntu (Wazuh server)** machines.
 
 ## Steps Performed
 
