@@ -22,9 +22,10 @@ The MITRE ATT&CK dashboard showed activity for several tactics:
 
 Reconnaissance was not displayed by default. The focus of Week 3 was to confirm that Wazuh is properly mapping events to ATT&CK tactics and understanding which behaviors generate detections.
 
-## Evidence
+## Results
+<img width="1913" height="908" alt="wasuh3" src="https://github.com/user-attachments/assets/45b15f41-778c-4a28-8c76-9431005347a5" />
 
-A screenshot has been captured of the MITRE ATT&CK dashboard showing the observed tactics and techniques. Please add the file `mitre_dashboard_overview.png` to this folder and reference it in `screenshots.md`.
+
 
 ## Lessons Learned
 
