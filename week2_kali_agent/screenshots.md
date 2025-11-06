@@ -3,13 +3,13 @@
 This directory contains screenshots demonstrating the Kali agent integration.
 
 - The Kali agent listed as Active in the Wazuh dashboard:
+<img width="1915" height="906" alt="wasuh2" src="https://github.com/user-attachments/assets/d6e2df95-a61a-4368-be13-52ac1739f391" />
 
-<img src="https://github.com/barkhad-isse/soc-portfolio/assets/99318439/88e512fb-e037-4293-8d0d-344a19cd0d0b" alt="Kali agent active" width="600">
+
 
 - The auditd service up and running on Kali:
+<img width="716" height="216" alt="active" src="https://github.com/user-attachments/assets/2783259b-a13f-4530-9405-7409af2e28e5" />
 
-<img src="https://github.com/barkhad-isse/soc-portfolio/assets/99318439/a9e77806-346b-41d0-8538-6acdf1d67c43" alt="Auditd service running" width="600">
 
 - Example events from the Threat Hunting view:
-
-<img src="https://github.com/barkhad-isse/soc-portfolio/assets/99318439/cb27a53f-bbfb-4f7a-8ca9-aec6d03f735a" alt="Threat hunting events" width="600">
+<img width="1915" height="905" alt="Screenshot 2025-11-06 164546" src="https://github.com/user-attachments/assets/af1e6b5f-9e46-4840-9955-209a9652036f" />
