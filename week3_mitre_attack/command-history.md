@@ -1,4 +1,4 @@
-# Week 3 command history
+# Week 3 - Command History
 
 
 ## Network Connectivity Check
