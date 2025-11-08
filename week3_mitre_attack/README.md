@@ -6,11 +6,6 @@ In this week, the focus was on simulating suspicious activity (e.g., network sca
 
 ## Steps Taken
 
-1. Ran host-based activity on the Kali agent to generate logs (e.g., Nmap scans and privileged commands).
-2. Opened the MITRE ATT&CK dashboard in Wazuh and refreshed to view recent activity.
-3. Reviewed the top tactics and techniques triggered by our actions.
-
-## Results
 #### 1. Network Connectivity Check  
 Before testing, connectivity between the Kali agent and the Wazuh server was verified.
 
@@ -25,6 +20,12 @@ Confirmed that auditd was running and collecting logs of recent successful event
 
 #### 5. Wazuh Agent Verification  
 Verified that the Wazuh agent was running and communicating properly with the server.
+
+## Results
+- Verified network connectivity between agent and server.  
+- Generated realistic network traffic (Nmap scans).  
+- Installed and validated Linux audit logging (auditd).  
+- Confirmed that the Wazuh agent was active and reporting logs.
 
 ## Evidence
 <img width="1913" height="908" alt="wasuh3" src="https://github.com/user-attachments/assets/e71783d5-0a62-4f80-bf57-b139516bbd93" />
