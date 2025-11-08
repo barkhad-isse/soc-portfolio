@@ -1,5 +1,6 @@
 # Week 3 command history
 
+
 ## Network Connectivity Check
 - ping 192.168.19.129
 
