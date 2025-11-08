@@ -1,28 +1,41 @@
-# Week 4 — File Integrity Monitoring (FIM)
+# Week 4 — File Integrity Monitoring Setup
 
-## Objective
-In week 4, we enabled File Integrity Monitoring (FIM) on the Kali agent and verified that Wazuh detects file creation, modification, and deletion. This demonstrates how the agent monitors critical directories and reports changes back to the SIEM.
+## Objective 
+The goal for Week 4 was to enable and verify File Integrity Monitoring (FIM) on the Wazuh agent running on the Kali VM.
+By simulating file creations, modifications and deletions, we proved that Wazuh correctly logs changes and forwards alerts to the SIEM.
 
 ## Environment
-- **Wazuh Server**: Ubuntu VM at 192.168.19.129
-- **Agent**: Kali Linux VM 
+
+Wazuh server - Ubuntu VM (192.168.19.129) - Runs the Wazuh manager, indexer, and dashboard
+Wazuh agent -	Kali VM -	Monitors the endpoint and sends telemetry to the manager
+Test directory - /home/kali/fim-test - A dedicated folder used to trigger FIM events
 
 ## Steps Performed
-1. **Create test directory**: Created `/home/kali/fim-test` to monitor file changes.
-2. **Verify agent status**: Confirmed that the Wazuh agent was running.
-3. **Ensure FIM active**: Verified that Wazuh's syscheck module monitors default system paths and the new test directory.
-4. **Generate file events**: Created, modified, and deleted files inside `/home/kali/fim-test`.
-5. **Review FIM logs**: Checked `/var/ossec/logs/ossec.log` for syscheck entries.
-6. **View alerts in Dashboard**: Opened Wazuh Dashboard → File Integrity Monitoring to see alerts for file changes.
+
+- Verified agent status
+- Ensured the Wazuh agent was up and running on the Kali VM
+- Created a folder on Kali to use for FIM testing
+- Created, modified and deleted a file to trigger integrity alerts
+- Confirmed that the agent’s syscheck (FIM) module recorded the activity
+- Using the Wazuh web UI, navigated to Overview, then File Integrity Monitoring and verified alerts indicating file creations, modifications and deletions on the kali agent.
 
 ## Findings
-- Wazuh recorded file creation, modification, and deletion events from the Kali agent.
-- The syscheck module scanned system paths and the test directory and produced alerts.
-- In the dashboard, alerts were associated with agent **kali** and user **root**.
+- The Wazuh agent correctly monitored the /home/kali/fim-test directory.
+- Creating, appending to and deleting testfile.txt generated Integrity checksum alerts that were visible under File Integrity Monitoring in the dashboard.
+- The alerts listed the affected file, the action (added, modified, deleted), the user (root), and the agent name (kali).
 
 ## Evidence
-The File Integrity Monitoring dashboard showing the detected file changes:
-<img width="1913" height="902" alt="Screenshot 2025-11-08 174628" src="https://github.com/user-attachments/assets/7c409c2d-0770-4ca0-b9fc-81828ccd7e1b" />
+
+![FIM Dashboard Results]
+<img width="1913" height="902" alt="Screenshot 2025-11-08 174628" src="https://github.com/user-attachments/assets/8e4e7ca5-39a6-433c-97d8-bd8c9970c73a" />
+This image should show the File Integrity Monitoring dashboard with alerts indicating modifications in the fim-test directory.
 
 ## Summary
-This week demonstrated how Wazuh's file integrity monitoring detects file changes on monitored endpoints. After enabling the syscheck module and generating test file activity, Wazuh successfully logged and displayed the events in the dashboard.
+
+### By the end of Week 4 we had:
+
+- Verified that the Wazuh agent was running and communicating with the manager.
+- Configured a specific directory to monitor for file changes.
+- Demonstrated that Wazuh detects creations, modifications and deletions in real time.
+- Recorded the results in both log files and the dashboard.
+These steps complete the File Integrity Monitoring lab and provide evidence that the SIEM is ready to detect file tampering events.
