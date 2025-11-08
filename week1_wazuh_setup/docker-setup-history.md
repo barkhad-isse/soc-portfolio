@@ -1,4 +1,4 @@
-# Docker and Wazuh setup history
+# Week 1 - Docker and Wazuh setup history
 
 ## Install Docker Engine and Compose
 
