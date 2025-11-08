@@ -5,7 +5,7 @@ In week 4, we enabled File Integrity Monitoring (FIM) on the Kali agent and veri
 
 ## Environment
 - **Wazuh Server**: Ubuntu VM at 192.168.19.129
-- **Agent**: Kali Linux VM (agent already installed in previous weeks)
+- **Agent**: Kali Linux VM 
 
 ## Steps Performed
 1. **Create test directory**: Created `/home/kali/fim-test` to monitor file changes.
