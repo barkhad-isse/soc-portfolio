@@ -27,5 +27,6 @@ Confirmed that auditd was running and collecting logs of recent successful event
 Verified that the Wazuh agent was running and communicating properly with the server.
 
 ## Evidence
+<img width="1913" height="908" alt="wasuh3" src="https://github.com/user-attachments/assets/e71783d5-0a62-4f80-bf57-b139516bbd93" />
 
 
