@@ -21,9 +21,8 @@ In week 4, we enabled File Integrity Monitoring (FIM) on the Kali agent and veri
 - In the dashboard, alerts were associated with agent **kali** and user **root**.
 
 ## Evidence
-Include a screenshot of the File Integrity Monitoring dashboard showing the detected file changes.
-
-Example placeholder: `![FIM Alert](./week4_fim_dashboard.png)`
+The File Integrity Monitoring dashboard showing the detected file changes:
+<img width="1913" height="902" alt="Screenshot 2025-11-08 174628" src="https://github.com/user-attachments/assets/7c409c2d-0770-4ca0-b9fc-81828ccd7e1b" />
 
 ## Summary
 This week demonstrated how Wazuh's file integrity monitoring detects file changes on monitored endpoints. After enabling the syscheck module and generating test file activity, Wazuh successfully logged and displayed the events in the dashboard.
