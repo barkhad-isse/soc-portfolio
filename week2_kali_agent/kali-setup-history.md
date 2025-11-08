@@ -1,4 +1,4 @@
-# Kali agent and audit setup history
+# Week 2 - Kali agent and audit setup history
 
 ## Install and register Wazuh agent on Kali
 
